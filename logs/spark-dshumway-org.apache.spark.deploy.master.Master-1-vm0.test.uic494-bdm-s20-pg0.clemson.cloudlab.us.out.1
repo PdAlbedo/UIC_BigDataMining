@@ -1,0 +1,22 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -cp /local/spark-2.4.5-bin-hadoop2.7/conf/:/local/spark-2.4.5-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host clnode108.clemson.cloudlab.us --port 7077 --webui-port 8080
+========================================
+20/02/19 15:27:27 INFO Master: Started daemon with process name: 15704@vm0.test.uic494-bdm-s20-pg0.clemson.cloudlab.us
+20/02/19 15:27:27 INFO SignalUtils: Registered signal handler for TERM
+20/02/19 15:27:27 INFO SignalUtils: Registered signal handler for HUP
+20/02/19 15:27:27 INFO SignalUtils: Registered signal handler for INT
+20/02/19 15:27:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/02/19 15:27:28 INFO SecurityManager: Changing view acls to: dshumway
+20/02/19 15:27:28 INFO SecurityManager: Changing modify acls to: dshumway
+20/02/19 15:27:28 INFO SecurityManager: Changing view acls groups to: 
+20/02/19 15:27:28 INFO SecurityManager: Changing modify acls groups to: 
+20/02/19 15:27:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dshumway); groups with view permissions: Set(); users  with modify permissions: Set(dshumway); groups with modify permissions: Set()
+20/02/19 15:27:28 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+20/02/19 15:27:28 INFO Master: Starting Spark master at spark://clnode108.clemson.cloudlab.us:7077
+20/02/19 15:27:28 INFO Master: Running Spark version 2.4.5
+20/02/19 15:27:28 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+20/02/19 15:27:28 INFO MasterWebUI: Bound MasterWebUI to vm0.test.uic494-bdm-s20-pg0.clemson.cloudlab.us, and started at http://clnode108.clemson.cloudlab.us:8080
+20/02/19 15:27:29 INFO Master: I have been elected leader! New state: ALIVE
+20/02/19 15:27:32 INFO Master: Registering worker 130.127.133.108:37813 with 56 cores, 250.7 GB RAM
+20/02/19 15:27:32 INFO Master: Registering worker 130.127.133.118:41552 with 56 cores, 250.7 GB RAM
+20/02/19 15:27:32 INFO Master: Registering worker 130.127.133.107:45812 with 56 cores, 250.7 GB RAM
+20/02/19 15:30:31 ERROR Master: RECEIVED SIGNAL TERM

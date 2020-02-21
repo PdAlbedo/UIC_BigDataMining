@@ -1,0 +1,47 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -cp /local/spark-2.4.5-bin-hadoop2.7/conf/:/local/spark-2.4.5-bin-hadoop2.7/jars/*:/local/hadoop-2.10.0/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host clnode108.clemson.cloudlab.us --port 7077 --webui-port 8080
+========================================
+20/02/19 15:30:32 INFO Master: Started daemon with process name: 16156@vm0.test.uic494-bdm-s20-pg0.clemson.cloudlab.us
+20/02/19 15:30:32 INFO SignalUtils: Registered signal handler for TERM
+20/02/19 15:30:32 INFO SignalUtils: Registered signal handler for HUP
+20/02/19 15:30:32 INFO SignalUtils: Registered signal handler for INT
+20/02/19 15:30:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/02/19 15:30:33 INFO SecurityManager: Changing view acls to: dshumway
+20/02/19 15:30:33 INFO SecurityManager: Changing modify acls to: dshumway
+20/02/19 15:30:33 INFO SecurityManager: Changing view acls groups to: 
+20/02/19 15:30:33 INFO SecurityManager: Changing modify acls groups to: 
+20/02/19 15:30:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dshumway); groups with view permissions: Set(); users  with modify permissions: Set(dshumway); groups with modify permissions: Set()
+20/02/19 15:30:33 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+20/02/19 15:30:33 INFO Master: Starting Spark master at spark://clnode108.clemson.cloudlab.us:7077
+20/02/19 15:30:33 INFO Master: Running Spark version 2.4.5
+20/02/19 15:30:33 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+20/02/19 15:30:33 INFO MasterWebUI: Bound MasterWebUI to vm0.test.uic494-bdm-s20-pg0.clemson.cloudlab.us, and started at http://clnode108.clemson.cloudlab.us:8080
+20/02/19 15:30:34 INFO Master: I have been elected leader! New state: ALIVE
+20/02/19 15:30:37 INFO Master: Registering worker 130.127.133.108:43253 with 56 cores, 250.7 GB RAM
+20/02/19 15:30:37 INFO Master: Registering worker 130.127.133.107:39829 with 56 cores, 250.7 GB RAM
+20/02/19 15:30:37 INFO Master: Registering worker 130.127.133.118:32809 with 56 cores, 250.7 GB RAM
+20/02/19 15:38:33 WARN HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@106c5a3c{r=0,c=false,a=IDLE,uri=null}
+20/02/19 16:18:39 INFO Master: Registering app Simple Application
+20/02/19 16:18:39 INFO Master: Registered app Simple Application with ID app-20200219161839-0000
+20/02/19 16:18:39 INFO Master: Launching executor app-20200219161839-0000/0 on worker worker-20200219153036-130.127.133.108-43253
+20/02/19 16:18:39 INFO Master: Launching executor app-20200219161839-0000/1 on worker worker-20200219153036-130.127.133.118-32809
+20/02/19 16:18:39 INFO Master: Launching executor app-20200219161839-0000/2 on worker worker-20200219153036-130.127.133.107-39829
+20/02/19 16:18:41 INFO Master: Received unregister request from application app-20200219161839-0000
+20/02/19 16:18:41 INFO Master: Removing app app-20200219161839-0000
+20/02/19 16:18:42 WARN Master: Got status update for unknown executor app-20200219161839-0000/0
+20/02/19 16:18:42 WARN Master: Got status update for unknown executor app-20200219161839-0000/2
+20/02/19 16:18:42 WARN Master: Got status update for unknown executor app-20200219161839-0000/1
+20/02/19 16:18:42 INFO Master: 130.127.133.117:33330 got disassociated, removing it.
+20/02/19 16:18:42 INFO Master: clnode108.clemson.cloudlab.us:42919 got disassociated, removing it.
+20/02/19 16:20:31 INFO Master: Registering app Simple Application
+20/02/19 16:20:31 INFO Master: Registered app Simple Application with ID app-20200219162031-0001
+20/02/19 16:20:31 INFO Master: Launching executor app-20200219162031-0001/0 on worker worker-20200219153036-130.127.133.108-43253
+20/02/19 16:20:31 INFO Master: Launching executor app-20200219162031-0001/1 on worker worker-20200219153036-130.127.133.118-32809
+20/02/19 16:20:31 INFO Master: Launching executor app-20200219162031-0001/2 on worker worker-20200219153036-130.127.133.107-39829
+20/02/19 16:20:37 INFO Master: Received unregister request from application app-20200219162031-0001
+20/02/19 16:20:37 INFO Master: Removing app app-20200219162031-0001
+20/02/19 16:20:37 INFO Master: 130.127.133.117:33342 got disassociated, removing it.
+20/02/19 16:20:37 INFO Master: clnode108.clemson.cloudlab.us:40115 got disassociated, removing it.
+20/02/19 16:20:37 WARN Master: Got status update for unknown executor app-20200219162031-0001/0
+20/02/19 16:20:37 WARN Master: Got status update for unknown executor app-20200219162031-0001/2
+20/02/19 16:20:37 WARN Master: Got status update for unknown executor app-20200219162031-0001/1
+20/02/19 16:24:44 ERROR Master: RECEIVED SIGNAL TERM

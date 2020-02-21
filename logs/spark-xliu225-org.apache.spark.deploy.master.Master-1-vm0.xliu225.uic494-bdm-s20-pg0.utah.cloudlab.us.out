@@ -1,0 +1,58 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -cp /local/spark-2.4.5-bin-hadoop2.7/conf/:/local/spark-2.4.5-bin-hadoop2.7/jars/*:/local/hadoop-2.10.0/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host ms0810.utah.cloudlab.us --port 7077 --webui-port 8080
+========================================
+20/02/21 14:43:03 INFO Master: Started daemon with process name: 3302@vm0.xliu225.uic494-bdm-s20-pg0.utah.cloudlab.us
+20/02/21 14:43:03 INFO SignalUtils: Registered signal handler for TERM
+20/02/21 14:43:03 INFO SignalUtils: Registered signal handler for HUP
+20/02/21 14:43:03 INFO SignalUtils: Registered signal handler for INT
+20/02/21 14:43:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/02/21 14:43:03 INFO SecurityManager: Changing view acls to: xliu225
+20/02/21 14:43:03 INFO SecurityManager: Changing modify acls to: xliu225
+20/02/21 14:43:03 INFO SecurityManager: Changing view acls groups to: 
+20/02/21 14:43:03 INFO SecurityManager: Changing modify acls groups to: 
+20/02/21 14:43:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(xliu225); groups with view permissions: Set(); users  with modify permissions: Set(xliu225); groups with modify permissions: Set()
+20/02/21 14:43:04 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+20/02/21 14:43:04 INFO Master: Starting Spark master at spark://ms0810.utah.cloudlab.us:7077
+20/02/21 14:43:04 INFO Master: Running Spark version 2.4.5
+20/02/21 14:43:04 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+20/02/21 14:43:04 INFO MasterWebUI: Bound MasterWebUI to vm0.xliu225.uic494-bdm-s20-pg0.utah.cloudlab.us, and started at http://ms0810.utah.cloudlab.us:8080
+20/02/21 14:43:04 INFO Master: I have been elected leader! New state: ALIVE
+20/02/21 14:43:07 INFO Master: Registering worker 128.110.153.80:45845 with 16 cores, 61.7 GB RAM
+20/02/21 14:43:08 INFO Master: Registering worker 128.110.153.65:33713 with 16 cores, 61.7 GB RAM
+20/02/21 14:43:08 INFO Master: Registering worker 128.110.153.102:45959 with 16 cores, 61.7 GB RAM
+20/02/21 14:53:02 INFO Master: Registering app xliu225_hw2_code.py
+20/02/21 14:53:02 INFO Master: Registered app xliu225_hw2_code.py with ID app-20200221145302-0000
+20/02/21 14:53:02 INFO Master: Launching executor app-20200221145302-0000/0 on worker worker-20200221144307-128.110.153.102-45959
+20/02/21 14:53:02 INFO Master: Launching executor app-20200221145302-0000/1 on worker worker-20200221144307-128.110.153.65-33713
+20/02/21 14:53:02 INFO Master: Launching executor app-20200221145302-0000/2 on worker worker-20200221144307-128.110.153.80-45845
+20/02/21 14:53:21 INFO Master: Received unregister request from application app-20200221145302-0000
+20/02/21 14:53:21 INFO Master: Removing app app-20200221145302-0000
+20/02/21 14:53:21 INFO Master: 128.110.153.73:51164 got disassociated, removing it.
+20/02/21 14:53:21 INFO Master: ms0810.utah.cloudlab.us:43103 got disassociated, removing it.
+20/02/21 14:53:21 WARN Master: Got status update for unknown executor app-20200221145302-0000/0
+20/02/21 14:53:21 WARN Master: Got status update for unknown executor app-20200221145302-0000/1
+20/02/21 14:53:21 WARN Master: Got status update for unknown executor app-20200221145302-0000/2
+20/02/21 15:00:00 WARN HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@3edccf06{r=0,c=false,a=IDLE,uri=null}
+20/02/21 15:06:56 INFO Master: Registering app xliu225_hw2_code.py
+20/02/21 15:06:56 INFO Master: Registered app xliu225_hw2_code.py with ID app-20200221150656-0001
+20/02/21 15:06:56 INFO Master: Launching executor app-20200221150656-0001/0 on worker worker-20200221144307-128.110.153.102-45959
+20/02/21 15:06:56 INFO Master: Launching executor app-20200221150656-0001/1 on worker worker-20200221144307-128.110.153.65-33713
+20/02/21 15:06:56 INFO Master: Launching executor app-20200221150656-0001/2 on worker worker-20200221144307-128.110.153.80-45845
+20/02/21 15:07:07 INFO Master: Received unregister request from application app-20200221150656-0001
+20/02/21 15:07:07 INFO Master: Removing app app-20200221150656-0001
+20/02/21 15:07:07 INFO Master: 128.110.153.73:51226 got disassociated, removing it.
+20/02/21 15:07:07 INFO Master: ms0810.utah.cloudlab.us:33519 got disassociated, removing it.
+20/02/21 15:07:07 WARN Master: Got status update for unknown executor app-20200221150656-0001/2
+20/02/21 15:07:07 WARN Master: Got status update for unknown executor app-20200221150656-0001/0
+20/02/21 15:07:07 WARN Master: Got status update for unknown executor app-20200221150656-0001/1
+20/02/21 15:11:10 INFO Master: Registering app xliu225_hw2_code.py
+20/02/21 15:11:10 INFO Master: Registered app xliu225_hw2_code.py with ID app-20200221151110-0002
+20/02/21 15:11:10 INFO Master: Launching executor app-20200221151110-0002/0 on worker worker-20200221144307-128.110.153.102-45959
+20/02/21 15:11:10 INFO Master: Launching executor app-20200221151110-0002/1 on worker worker-20200221144307-128.110.153.65-33713
+20/02/21 15:11:10 INFO Master: Launching executor app-20200221151110-0002/2 on worker worker-20200221144307-128.110.153.80-45845
+20/02/21 15:11:25 INFO Master: Received unregister request from application app-20200221151110-0002
+20/02/21 15:11:25 INFO Master: Removing app app-20200221151110-0002
+20/02/21 15:11:25 INFO Master: 128.110.153.73:51242 got disassociated, removing it.
+20/02/21 15:11:25 INFO Master: ms0810.utah.cloudlab.us:38352 got disassociated, removing it.
+20/02/21 15:11:25 WARN Master: Got status update for unknown executor app-20200221151110-0002/1
+20/02/21 15:11:25 WARN Master: Got status update for unknown executor app-20200221151110-0002/0
+20/02/21 15:11:25 WARN Master: Got status update for unknown executor app-20200221151110-0002/2
