@@ -17,6 +17,7 @@ if __name__ == "__main__":
         # result = logData.orderBy("cca2", "timestamp")
         
 	# for the 2nd dataset
-	result = logData.orderBy("hospital_county", "facility_name")
+	result = logData.orderBy("Hospital County", "Facility Name")
+	
 	result.show()
         result.write.format("csv").option("header","true").save(sys.argv[2])
